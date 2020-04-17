@@ -1,0 +1,56 @@
+.jumbotron{
+    
+    height:900px;
+    background-image: url("../images/image12.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 200px 50px;
+    font-family: 'Times New Roman', Times, serif;
+    animation:fadeIn 3000ms ease-in-out;
+    
+}
+.btn{
+    margin-block-start: 30px;
+}
+.container{
+    padding: 60px 50px;
+    
+}
+.col-lg-12{
+    animation: mymove 5s infinite;
+}
+.container-fluid{
+    padding: 60px 50px;
+    
+}
+
+
+@keyframes fadeIn{
+    from{opacity:0;
+        transform: scale(1.5);}
+    to{opacity: 1;}
+
+}
+
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 200px;}
+  }
+h1{
+    text-shadow: 2px 2px;
+}
+
+.top_button{
+    padding:30px;
+
+    float:right;
+
+}
+.video_click{
+    padding: 60px 50px;
+    background-color:lightseagreen;
+}
+.video_dispaly{
+    padding: 60px 50px;
+}
+

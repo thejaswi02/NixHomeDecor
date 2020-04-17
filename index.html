@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nix Home Decor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel=stylesheet href="css/styles.css">
+  <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    
+  } else {
+    x.style.display = "none";
+   
+  }
+}
+
+
+        </script>
+        
+</head>
+ <body>
+<div class="jumbotron text-center">
+<h1><strong>NIX Home Decor</strong></h1>
+<h3>Single stop for all your Home Interior</h3>
+<a class="btn btn-success  btn-lg js-scroll-trigger" href="#about">Find Out More</a>
+
+
+</div>
+
+<div class="container" id="about">
+
+        
+            <div class="col-lg-12 text-center ">
+              <h1><strong>About Nix</strong></h2>
+              <p>For more than 70 years, we’ve set out to prove furniture can be made a better way. We design and craft timeless styles that are comfortable and livable.<br/><br/>
+                   For our guests, living the American dream is as affordable as it is priceless.</p>
+               
+              <a class="btn btn-success btn-lg js-scroll-trigger" href="#services">What We Offer</a>
+            </div>
+        
+        </div>
+      <div class="container-fluid" id="services">
+          <div class= "col-lg-12 text-center">
+            <h2><strong>Products</strong> what we offer</h2>
+           
+            <br>
+        </div>
+            <div class="row">
+              <div class="col-sm-4">
+                  
+               <img src="images/image1.jpg" width="400px" height="300px">
+               <h3>living room</h3>
+              </div>
+              <div class="col-sm-4">
+                
+                <img src="images/image2.jpg" width="400px" height="300px">
+                <h3>BedRoom</h3>
+              </div>
+              <div class="col-sm-4">
+                 
+                  <img src="images/image3.png" width="400px" height="300px">
+                  <h3>Kitchen</h3>
+                
+              </div>
+          
+
+              <div class="col-sm-4">
+                    
+                    <img src="images/image4.jpg" width="400px" height="300px">
+                    <h3>Kids Furniture</h3>
+                  
+                </div>
+                <div class="col-sm-4">
+                        
+                        <img src="images/image5.Jpg" width="400px" height="300px">
+                        <h3>Lightning</h3>
+                      
+                    </div>
+                    <div class="col-sm-4">
+                           
+                            <img src="images/image7.jpg" width="400px" height="300px">
+                            <h3>Plants and Flowers</h3>
+                          
+                        </div>
+            </div>
+            <div class="video_click"> 
+                <p><strong>This video provides all detailed expalnation about designs , patters, and material .Click the button to hide the video</strong></p>
+                    <button onclick="myFunction()" class="btn btn-warning btn-lg">Video</button>
+            <div class="video_dispaly" id=myDIV>
+
+                    <iframe width="700" height="315" src="https://www.youtube.com/embed/11aqUfxw15g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>
+            <div class="top_button">
+            <button type="button" class="btn btn-success btn-lg" onclick="topFunction()" id="myBtn"   title="Go to top">Top</button>
+        </div>
+        </div>
+ </body>
+
+ </html>
